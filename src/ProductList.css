@@ -90,7 +90,7 @@ body {
 .product-price {
     color: #e74c3c;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .product-image {
@@ -159,7 +159,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 19px;
-    gap: 1rem,
+    gap: 1rem;
 }
 .links {
     display: flex;
