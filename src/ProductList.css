@@ -46,6 +46,7 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 .product-list {
     display: flex;
@@ -140,10 +141,10 @@ body {
     text-decoration: none;
 }
 .tag {
-    width: 400px;
+    width: 48%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .tag img {
@@ -157,19 +158,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 650px;
     font-size: 19px;
+    gap: 1rem,
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 52%;
 }
 .cart{
     color: white;
     display: flex;
+    position: relative;
 }
 .cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
+    font-size: 1.25rem;
     position: absolute;
-    font-size: 29px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -55%);
 
 }
 .plantname_heading{
@@ -194,6 +202,15 @@ body {
         flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on smaller screens */
         max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on smaller screens */
     }
+
+    .tag {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .links {
+        width: 100%;
+    }
 }
 /* ProductList.css */
 
@@ -217,6 +234,7 @@ body {
   
   .product-button.added-to-cart {
     background-color: grey; /* Grey when product is added */
+    cursor: not-allowed;
   }
   @media (max-width: 1200px) {
     .product-card {
